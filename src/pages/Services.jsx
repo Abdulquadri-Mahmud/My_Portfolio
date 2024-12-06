@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
+import { Link } from 'react-router-dom';
 
 const Services = () => {
   useEffect(() => {
@@ -12,43 +13,39 @@ const Services = () => {
       title: 'Frontend Development',
       description:
         'Creating responsive, dynamic, and interactive websites using HTML, CSS, JavaScript, ReactJS, and TailwindCSS.',
-      icon: '/path-to-your-frontend-icon.svg',
-    },
-    {
-      title: 'UI/UX Design',
-      description:
-        'Designing modern and user-friendly interfaces with an emphasis on usability, accessibility, and a smooth user experience.',
-      icon: '/path-to-your-uiux-icon.svg',
-    },
-    {
-      title: 'Web Performance Optimization',
-      description:
-        'Enhancing the performance of websites through code optimization, image compression, and reducing load times.',
-      icon: '/path-to-your-performance-icon.svg',
+      icon: 'fas fa-laptop-code',  // Font Awesome icon for frontend
     },
     {
       title: 'SEO Optimization',
       description:
         'Improving the visibility of your website on search engines through technical SEO, keyword research, and content optimization.',
-      icon: '/path-to-your-seo-icon.svg',
+      icon: 'fas fa-search',  // Font Awesome icon for SEO
     },
     {
       title: 'Custom Web Applications',
       description:
         'Building custom web applications tailored to your business needs using modern technologies like ReactJS, NodeJS, and Express.',
-      icon: '/path-to-your-app-icon.svg',
+      icon: 'fas fa-cogs',  // Font Awesome icon for custom apps
     },
+    {
+      title: 'Web Performance Optimization',
+      description:
+        'Enhancing the performance of websites through code optimization, image compression, and reducing load times.',
+      icon: 'fas fa-tachometer-alt',  // Font Awesome icon for performance
+    },
+    
+    
     {
       title: 'API Integration',
       description:
         'Integrating third-party APIs into your websites and applications to enhance functionality and user experience.',
-      icon: '/path-to-your-api-icon.svg',
+      icon: 'fas fa-plug',  // Font Awesome icon for API integration
     },
     {
       title: 'Cross-Browser Compatibility',
       description:
         'Ensuring your websites function seamlessly across different browsers and devices, providing consistent experiences for all users.',
-      icon: '/path-to-your-browser-icon.svg',
+      icon: 'fas fa-browser',  // Font Awesome icon for cross-browser compatibility
     },
   ];
 
@@ -56,65 +53,40 @@ const Services = () => {
     <section className="bg-black text-white py-20 px-6" id="services">
       <div className="container mx-auto text-center lg:text-left">
         {/* Section Title */}
-        <h2
-          data-aos="fade-up"
-          className="text-4xl md:text-5xl font-extrabold leading-tight mb-16 text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-red-600"
-        >
+        <h2 data-aos="fade-up" className="text-4xl md:text-5xl font-extrabold leading-tight mb-16 text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-red-600">
           My Services
         </h2>
 
         {/* Services Overview */}
-        <p
-          data-aos="fade-up"
-          className="text-lg md:text-xl text-gray-300 mb-12 max-w-2xl mx-auto"
-        >
-          As a frontend developer, I offer a range of services to help you build a beautiful, functional, and user-friendly web presence. Let me bring your ideas to life with the latest technologies and design principles.
-        </p>
+        <p data-aos="fade-up" className="text-lg md:text-xl text-gray-300 mb-12 max-w-2xl mx-auto"> As a frontend developer, I offer a range of services to help you build a beautiful, functional, and user-friendly web presence. Let me bring your ideas to life with the latest technologies and design principles.</p>
 
         {/* Services Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-12">
           {services.map((service, index) => (
-            <div
-              key={index}
-              data-aos="fade-up"
-              className="relative bg-opacity-50 backdrop-blur-sm rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105 group"
-              style={{
-                background: 'rgba(255, 255, 255, 0.1)', // Semi-transparent background for glassmorphism
-              }}
-            >
+            <div key={index} data-aos="fade-up" className="relative bg-opacity-50 backdrop-blur-sm rounded-lg shadow-lg px-6 py-8 transition-transform transform hover:scale-105 group bg-gray-900">
               <div className="flex justify-center mb-4">
-                <img
-                  src={service.icon}
-                  alt={service.title}
-                  className="w-20 h-20 object-contain"
-                />
+                <i className={`${service.icon} text-4xl text-purple-600`} />  {/* Icon with Tailwind classes */}
               </div>
               <h3 className="text-2xl font-semibold text-gray-100 mb-4">{service.title}</h3>
               <p className="text-gray-300 mb-6">{service.description}</p>
-              <a
-                href="#contact"
-                className="inline-block bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-3 px-8 rounded-lg text-lg font-semibold transition duration-300 ease-in-out hover:bg-indigo-700 transform hover:scale-110"
-              >
+              <Link to="/contact" className="inline-block bg-gradient-to-r from-red-600 to-purple-600 text-white py-3 px-8 rounded-lg text-lg font-semibold transition duration-300 ease-in-out hover:bg-indigo-700 transform hover:scale-110">
                 Get in Touch
-              </a>
+              </Link>
             </div>
           ))}
         </div>
 
         {/* Contact CTA Section */}
         <div className="mt-16 text-center">
-          <h3 className="text-3xl md:text-4xl font-extrabold text-gray-100 mb-6">
+          <h3 className="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-red-600 mb-6">
             Ready to take your website to the next level?
           </h3>
-          <p className="text-xl text-gray-300 mb-6">
+          <p className="text-xl text-gray-400 mb-6">
             Whether you need a brand new website, an upgrade, or SEO services, I’m here to help. Let’s work together to create something amazing!
           </p>
-          <a
-            href="#contact"
-            className="inline-block bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-3 px-8 rounded-lg text-lg font-semibold transition duration-300 ease-in-out hover:bg-indigo-700 transform hover:scale-110"
-          >
+          <Link to="/contact"className="inline-block bg-gradient-to-r from-red-600 to-purple-600 text-white py-3 px-8 rounded-lg text-lg font-semibold transition duration-300 ease-in-out hover:bg-indigo-700 transform hover:scale-110">
             Get in Touch
-          </a>
+          </Link>
         </div>
       </div>
     </section>

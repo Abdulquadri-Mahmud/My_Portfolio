@@ -26,30 +26,24 @@ const Sidebar = () => {
       </button>
 
       {/* Sidebar Container */}
-      <div
-        className={`fixed inset-y-0 right-0 z-40 w-[70%] bg-black text-white transform ${
+      <div className={`fixed inset-y-0 right-0 z-40 w-[80%] bg-black text-white transform ${
           sidebarOpen ? '-translate-x-0' : 'translate-x-full'
-        } transition-transform duration-300 ease-in-out shadow-lg`}
-      >
+        } transition-transform duration-300 ease-in-out shadow-lg`}>
         {/* Sidebar Header */}
-        <div className="p-6 flex items-center justify-between border-b border-gray-900">
-          <h1 className="text-2xl font-bold text-purple-500">Sidebar</h1>
+        <div className="p-6 flex items-center justify-between border-b border-gray-500">
+          <h1 className="text-2xl font-bold">AdeyemiCODE</h1>
           <button
             onClick={() => setSidebarOpen(false)}
             className="text-white p-1 rounded-md focus:outline-none"
           >
-            <FaRegWindowClose className="text-2xl" />
+            {/* <FaRegWindowClose className="text-2xl" /> */}
           </button>
         </div>
 
         {/* Navigation Links */}
-        <nav className="mt-4 space-y-2">
+        <nav className="mt-4 space-y-3 px-2">
           {navigation.map((item) => (
-            <Link
-              key={item.name}
-              to={item.path}
-              className="block px-4 py-2 text-lg font-medium rounded-lg hover:bg-gray-700 transition-all duration-200 ease-in-out"
-            >
+            <Link key={item.name} to={item.path} className="block px-4 py-3 text-lg font-medium rounded-md hover:bg-gradient-to-r from-purple-600 to-red-600 duration-150 ease-in-out">
               {item.name}
             </Link>
           ))}
@@ -58,8 +52,7 @@ const Sidebar = () => {
 
       {/* Backdrop */}
       {sidebarOpen && (
-        <div
-          onClick={() => setSidebarOpen(false)}
+        <div onClick={() => setSidebarOpen(false)}
           className="fixed inset-0 bg-black bg-opacity-50 z-30 transition-opacity duration-300"
         />
       )}

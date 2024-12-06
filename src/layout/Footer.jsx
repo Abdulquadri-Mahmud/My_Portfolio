@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   useEffect(() => {
@@ -11,10 +12,7 @@ const Footer = () => {
     <footer className="bg-black text-white py-20 pb-4 px-6" id="footer">
       <div className="container mx-auto text-center">
         {/* Footer Title */}
-        <h2
-          data-aos="fade-up"
-          className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-red-600 mb-3"
-        >
+        <h2 data-aos="fade-up" className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-red-600 mb-3">
           Let's Build Something Amazing Together
         </h2>
 
@@ -23,8 +21,8 @@ const Footer = () => {
           {/* Contact Info */}
           <div data-aos="fade-up" className="flex flex-col items-center">
             <h3 className="text-xl font-semibold text-gray-300 mb-2">Contact Info</h3>
-            <p className="text-gray-400">Email: <a href="mailto:your-email@example.com" className="text-purple-600 hover:text-purple-400">your-email@example.com</a></p>
-            <p className="text-gray-400">Phone: <span className="text-purple-600">+123 456 7890</span></p>
+            <p className="text-gray-400">Email: <Link to="mailto:your-email@example.com" className="text-purple-600 hover:text-purple-400">your-email@example.com</Link></p>
+            <p className="text-gray-400">Phone: <Link to={'tel:+2347047594667'} className="text-purple-600">+234 704 759 4667</Link></p>
           </div>
 
           {/* Social Media Links */}

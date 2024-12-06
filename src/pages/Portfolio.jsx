@@ -20,8 +20,8 @@ const PortfolioComponent = () => {
       title: 'ADEXIFY (E-Commerce)',
       description: `Adexify is a personal e-commerce project designed to empower upcoming online vendors. It provides an intuitive platform to help vendors grow their businesses faster and more efficiently. With Adexify, managing and showcasing products becomes seamless, enabling vendors to reach more customers and scale their operations effortlessly.`,
       image: '/p.png',
-      demoLink: 'https://your-blog-platform-demo.com',
-      repoLink: 'https://github.com/your-username/blog-platform',
+      demoLink: 'https://adexify-online-shopping-site.vercel.app/',
+      repoLink: 'https://github.com/Abdulquadri-Mahmud/Adexify.git',
     },
     {
       title: 'MAGKKFOOTBALLTALK',
@@ -31,11 +31,11 @@ const PortfolioComponent = () => {
       repoLink: 'https://github.com/Abdulquadri-Mahmud/magkfootball.git',
     },
     {
-      title: 'Ade-Space',
+      title: 'Greeno',
       description: 'This project is a personal initiative designed to enhance my skills in frontend development. Built with ReactJS and TailwindCSS, it showcases modern web development practices, including responsive design, component-based architecture, and optimized performance. The project serves as a hands-on platform to deepen my expertise and implement advanced features like animations, state management, and reusable components.',
-      image: '/p6.png',
-      demoLink: 'https://ade-space.vercel.app/',
-      repoLink: 'https://github.com/your-username/blog-platform',
+      image: '/greeno.png',
+      demoLink: 'https://greeno.vercel.app/',
+      repoLink: 'https://github.com/Abdulquadri-Mahmud/Greeno.git',
     },
     {
       title: 'MJ\'s Food',
@@ -44,40 +44,49 @@ const PortfolioComponent = () => {
       demoLink: 'https://mj-s-food.vercel.app/',
       repoLink: 'https://github.com/Abdulquadri-Mahmud/MJ-s_Food.git',
     },
+    
     {
       title: 'Carint',
       description: 'This project is a personal initiative designed to enhance my skills in frontend development. Built with ReactJS and TailwindCSS, it showcases modern web development practices, including responsive design, component-based architecture, and optimized performance. The project serves as a hands-on platform to deepen my expertise and implement advanced features like animations, state management, and reusable components.',
       image: '/p2.png',
       demoLink: 'https://carint-shipping-website.vercel.app/',
-      repoLink: 'https://github.com/your-username/blog-platform',
+      repoLink: 'https://github.com/Abdulquadri-Mahmud/Carint.git',
     },
     {
       title: 'MediPlus',
       description: 'This project is a personal initiative designed to enhance my skills in frontend development. Built with ReactJS and TailwindCSS, it showcases modern web development practices, including responsive design, component-based architecture, and optimized performance. The project serves as a hands-on platform to deepen my expertise and implement advanced features like animations, state management, and reusable components.',
       image: '/p3.png',
       demoLink: 'https://mediplus-eight.vercel.app/',
-      repoLink: 'https://github.com/your-username/blog-platform',
+      repoLink: 'https://github.com/Abdulquadri-Mahmud/Mediplus.git',
     },
     {
       title: 'NIKI CLOTHING',
       description: 'This project is a personal initiative designed to enhance my skills in frontend development. Built with ReactJS and TailwindCSS, it showcases modern web development practices, including responsive design, component-based architecture, and optimized performance. The project serves as a hands-on platform to deepen my expertise and implement advanced features like animations, state management, and reusable components.',
       image: '/p4.png',
       demoLink: 'https://niki-clothing.vercel.app/',
-      repoLink: 'https://github.com/your-username/blog-platform',
+      repoLink: 'https://github.com/Abdulquadri-Mahmud/Niki-Clothing.git',
     },
+    
     {
-      title: 'MJ CakeZone',
+      title: 'Ade-Space',
       description: 'This project is a personal initiative designed to enhance my skills in frontend development. Built with ReactJS and TailwindCSS, it showcases modern web development practices, including responsive design, component-based architecture, and optimized performance. The project serves as a hands-on platform to deepen my expertise and implement advanced features like animations, state management, and reusable components.',
-      image: '/p5.png',
-      demoLink: 'https://mj-cakazone.vercel.app/',
-      repoLink: 'https://github.com/your-username/blog-platform',
+      image: '/p6.png',
+      demoLink: 'https://ade-space.vercel.app/',
+      repoLink: 'https://github.com/Abdulquadri-Mahmud/Ade-Space.git',
     },
     {
       title: 'Bliss',
       description: 'This project is a personal initiative designed to enhance my skills in frontend development. Built with ReactJS and TailwindCSS, it showcases modern web development practices, including responsive design, component-based architecture, and optimized performance. The project serves as a hands-on platform to deepen my expertise and implement advanced features like animations, state management, and reusable components.',
       image: '/p7.png',
       demoLink: 'https://bliss-websites.vercel.app/',
-      repoLink: 'https://github.com/your-username/blog-platform',
+      repoLink: 'https://github.com/Abdulquadri-Mahmud/Bliss-websites.git',
+    },
+    {
+      title: 'MJ CakeZone',
+      description: 'This project is a personal initiative designed to enhance my skills in frontend development. Built with ReactJS and TailwindCSS, it showcases modern web development practices, including responsive design, component-based architecture, and optimized performance. The project serves as a hands-on platform to deepen my expertise and implement advanced features like animations, state management, and reusable components.',
+      image: '/p5.png',
+      demoLink: 'https://mj-cakazone.vercel.app/',
+      repoLink: 'https://github.com/Abdulquadri-Mahmud/MJ-Cakazone.git',
     },
     // Add more projects here
   ];
@@ -124,56 +133,42 @@ const PortfolioComponent = () => {
   };
 
   return (
-    <section className="bg-black text-white px-6 py-16" id="portfolio">
-      <div className="container mx-auto ">
+    <section className="bg-black text-white py-0 md:px-6 px-3" id="portfolio">
+      <div className="container mx-auto text-center lg:text-left">
         {/* Section Title */}
-        <h2 data-aos="fade-up" className="text-4xl text-center md:text-5xl font-extrabold leading-tight mb-8 text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-red-600">
+        <h2
+          data-aos="fade-up"
+          className="text-4xl md:text-5xl font-extrabold leading-tight mb-16 text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-red-600"
+        >
           My Portfolio
         </h2>
 
-        <p className="text-sm text-gray-400 text-center mx-auto max-w-3xl">
-          I’m Adeyemi, a passionate frontend web developer specializing in crafting visually stunning and responsive websites. My expertise lies in HTML, CSS JAVASCRIPT
-          TailwindCSS, ReactJS,MondoDB and NodeJS and creating seamless user experiences.
-        </p>
-        <p className="text-sm text-gray-400 text-center mx-auto max-w-3xl pt-4">
-          Here, you’ll find a showcase of my projects, highlighting innovative designs and functional web solutions tailored to real-world needs. Each project reflects my dedication to clean code, creativity, and delivering value to users.
-        </p>
-        <p className="text-sm text-gray-400 text-center mx-auto max-w-3xl pt-4">
-          Feel free to explore my work, learn more about my skills, and don’t hesitate to contact me if you’re looking for a developer to bring your ideas to life!
-        </p>
-        <p className="text-sm text-gray-400 text-center mx-auto max-w-3xl pt-4">
-          Let’s build something amazing together. 🚀
-        </p>
-
         {/* Projects Showcase */}
-        <div className=" mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
           {currentProjects.map((project, index) => (
-            <div
-              key={index}
-              data-aos="zoom-in-up" // Adding unique animation to each portfolio item
-              className="relative bg-gray-950 opacity-50 p-3 rounded-lg shadow-lg transition-transform transform hover:scale-105 group"
-            >
+            <div key={index} data-aos="zoom-in-up" className='rounded-md bg-gray-900 p-2'>
               {/* Project Image */}
               <div className="overflow-hidden rounded-lg mb-4">
                 <img src={project.image} alt={project.title}
-                  className="max-w-full h-64 rounded-md transition-transform transform group-hover:scale-110"
+                  className="max-w-full sm:h-64 h-[250px] rounded-md transition-transform transform group-hover:scale-110"
                 />
               </div>
+              <div className="px-3 py-3">
+                {/* Project Title */}
+                <h3 className="text-2xl text-start font-semibold text-gray-100 mb-4">{project.title}</h3>
 
-              {/* Project Title */}
-              <h3 className="text-2xl font-semibold text-gray-100 mb-4">{project.title}</h3>
+                {/* Project Description */}
+                <p className="text-gray-400 mb-6 text-start">{project.description}</p>
 
-              {/* Project Description */}
-              <p className="text-gray-400 mb-6 text-start">{project.description}</p>
-
-              {/* Links */}
-              <div className="flex justify-between">
-                <a href={project.demoLink} target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-500 transition duration-300">
-                  View Demo
-                </a>
-                <a href={project.repoLink} target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-500 transition duration-300">
-                  GitHub Repo
-                </a>
+                {/* Links */}
+                <div className="flex justify-between">
+                  <a href={project.demoLink} target="_blank" rel="noopener noreferrer" className="text-white px-4 py-2 rounded-md bg-gradient-to-r from-purple-600 to-red-600 transition duration-300">
+                    View Demo
+                  </a>
+                  <a href={project.repoLink} target="_blank" rel="noopener noreferrer" className="text-white px-4 py-2 rounded-md bg-gradient-to-r from-red-600 to-purple-600 transition duration-300">
+                    GitHub Repo
+                  </a>
+                </div>
               </div>
             </div>
           ))}
@@ -181,13 +176,13 @@ const PortfolioComponent = () => {
 
         {/* Pagination Controls */}
         <div className="flex justify-center mt-8">
-          <ul className="flex items-center space-x-4">
+          <ul className="flex items-center flex-wrap space-x-2">
             {/* Previous Button */}
             <li>
               <button
                 onClick={handlePrevious}
                 disabled={currentPage === 1}
-                className={`px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition duration-300 ${currentPage === 1 ? 'opacity-50 cursor-not-allowed' : ''}`}
+                className={`px-4 py-2 bg-gray-900 text-white rounded-lg hover:bg-gradient-to-r from-purple-600 to-red-600 transition duration-300 ${currentPage === 1 ? 'opacity-50 cursor-not-allowed' : ''}`}
               >
                 Previous
               </button>
@@ -201,10 +196,10 @@ const PortfolioComponent = () => {
                 <li key={index}>
                   <button
                     onClick={() => paginate(number)}
-                    className={`px-4 py-2 rounded-lg ${
+                    className={`px-4 py-2 rounded-md ${
                       currentPage === number
-                        ? 'bg-purple-600 text-white'
-                        : 'bg-gray-800 text-white hover:bg-gray-700 transition duration-300'
+                        ? 'bg-gradient-to-r from-purple-600 to-red-600 text-white'
+                        : 'bg-gray-900 text-white hover:bg-gradient-to-r from-purple-600 to-red-600 transition duration-300'
                     }`}
                   >
                     {number}
@@ -218,7 +213,7 @@ const PortfolioComponent = () => {
               <button
                 onClick={handleNext}
                 disabled={currentPage === totalPages}
-                className={`px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition duration-300 ${currentPage === totalPages ? 'opacity-50 cursor-not-allowed' : ''}`}
+                className={`px-4 py-2 bg-gray-900 text-white rounded-lg hover:bg-gradient-to-r from-purple-600 to-red-600 transition duration-300 ${currentPage === totalPages ? 'opacity-50 cursor-not-allowed' : ''}`}
               >
                 Next
               </button>

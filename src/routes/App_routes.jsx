@@ -7,6 +7,7 @@ import About from '../pages/About';
 import Portfolio from '../pages/Portfolio';
 import Services from '../pages/Services';
 import ContactPage from '../pages/Contact';
+import Whatsapp from '../components/Whatsapp';
 
 export default function App_routes() {
   return (
@@ -20,6 +21,7 @@ export default function App_routes() {
         <Route path='/contact' element={<ContactPage/>}/>
       </Routes>
       <Footer/>
+      <Whatsapp/>
     </Router>
   )
 }

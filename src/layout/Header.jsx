@@ -48,7 +48,7 @@ export default function Header() {
           <div className="hidden lg:flex">
             <Link
               to="/contact"
-              className="text-white bg-purple-600 px-4 py-2 rounded-md font-semibold transition duration-300 ease-in-out transform hover:scale-105"
+              className="text-white bg-gradient-to-r from-purple-600 to-red-600 px-4 py-2 rounded-md font-semibold transition duration-300 ease-in-out transform hover:scale-105"
             >
               Hire Me
             </Link>

@@ -1,14 +1,15 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
+import { Link } from 'react-router-dom';
 
-const AboutComponent = () => {
+const About = () => {
   useEffect(() => {
     AOS.init({ duration: 1200 }); // Initialize AOS animations with a duration of 1200ms
   }, []);
 
   return (
-    <section className="bg-black text-white py-20 px-6" id="about">
+    <section className="bg-black text-white py-20 md:px-6 px-2" id="about">
       <div className="container mx-auto text-center">
         {/* Section Title */}
         <h2 data-aos="fade-up" className="text-4xl md:text-center text-start md:text-5xl font-bold leading-tight mb-8 text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-red-600">
@@ -28,13 +29,13 @@ const AboutComponent = () => {
 
           {/* Text Section */}
           <div data-aos="fade-left" className="flex text-sm flex-col justify-start md:max-w-3xl">
-            <p className="md:text-xl text-start text-gray-300 mb-6">
+            <p className="text-xl text-start text-gray-400 mb-6">
               Hello! I'm AdeyemiCODE, a frontend and Mern Stack developer with a passion for
               creating beautiful and dynamic user interfaces. I specialize in, HTML, CSS JAVASCRIPT
               TailwindCSS, ReactJS,MondoDB and NodeJS , and building interactive web applications.
             </p>
 
-            <p className="md:text-xl text-start text-gray-300 mb-6">
+            <p className="text-xl text-start text-gray-400 mb-6">
               With over 3 years of experience, I’ve worked on a variety of
               projects, continuously learning and staying up-to-date with the
               latest trends and technologies in the industry. My goal is to build
@@ -42,22 +43,16 @@ const AboutComponent = () => {
               visually captivating.
             </p>
 
-            <p className="md:text-xl text-start text-gray-300 mb-6">
+            <p className="text-xl text-start text-gray-400 mb-6">
               Dynamic and innovative Front-end Website Instructor at Al-Ameen ITHUB, adept in HTML, CSS and JavaScript. Specialized in elevating web development skills through engaging lectures and hands-on workshops, significantly enhancing student proficiency in web technologies. Known for exceptional mentor-ship and a keen ability to optimize web content, blending technical prowess with strong instructional acumen.
             </p>
-            <p className="md:text-xl text-start text-gray-300 mb-6">
+            <p className="text-xl text-start text-gray-400 mb-6">
               Motivated student seeking career in web development. Hardworking and friendly person with strong organization and time management skills. Eager to support and learn from development teams to deliver well-designed mobile and web applications
             </p>
 
-            <p className="md:text-xl text-start text-gray-300 mb-6">Self-motivated Web Developer with comprehensive experience managing multiple clients. Passionate and hardworking to deliver on deadlines. Strong HTML, CSS, JAVASCRIPTP, REACT.JS, NODEJS, EXPRESS.JS and MONGODB.</p>
-
-            <a
-              href="/contact"
-              data-aos="fade-up"
-              className="inline-block mt-6 bg-gradient-to-r from-purple-600 to-red-600 text-white py-3 px-8 rounded-lg text-lg font-semibold transition duration-300 ease-in-out hover:bg-indigo-700 transform hover:scale-105"
-            >
+            <Link to="/contact" data-aos="fade-up" className="inline-block mt-6 bg-gradient-to-r from-purple-600 to-red-600 text-white py-3 px-8 rounded-lg text-lg font-semibold transition duration-300 ease-in-out hover:bg-indigo-700 transform hover:scale-105">
               Get in Touch
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -102,6 +97,17 @@ const AboutComponent = () => {
             {/* Skill 4 */}
             <div className="mb-6">
               <div className="flex justify-between mb-2">
+                <span className="text-gray-300">TailwindCSS</span>
+                <span className="font-semibold text-gray-300">80%</span>
+              </div>
+              <div className="w-full h-2 bg-gray-300 rounded-full">
+                <div className="h-2 bg-gradient-to-r from-purple-600 to-red-600 rounded-full" style={{ width: '80%' }}></div>
+              </div>
+            </div>
+
+            {/* Skill 5 */}
+            <div className="mb-6">
+              <div className="flex justify-between mb-2">
                 <span className="text-gray-300">ReactJS</span>
                 <span className="font-semibold text-gray-300">75%</span>
               </div>
@@ -110,16 +116,28 @@ const AboutComponent = () => {
               </div>
             </div>
 
-            {/* Skill 5 */}
+            {/* Skill 6 */}
             <div className="mb-6">
               <div className="flex justify-between mb-2">
-                <span className="text-gray-300">TailwindCSS</span>
-                <span className="font-semibold text-gray-300">80%</span>
+                <span className="text-gray-300">NodeJS</span>
+                <span className="font-semibold text-gray-300">50%</span>
               </div>
               <div className="w-full h-2 bg-gray-300 rounded-full">
-                <div className="h-2 bg-gradient-to-r from-purple-600 to-red-600 rounded-full" style={{ width: '80%' }}></div>
+                <div className="h-2 bg-gradient-to-r from-purple-600 to-red-600 rounded-full" style={{ width: '50%' }}></div>
               </div>
             </div>
+
+            {/* Skill 7 */}
+            <div className="mb-6">
+              <div className="flex justify-between mb-2">
+                <span className="text-gray-300">MongoDB</span>
+                <span className="font-semibold text-gray-300">60%</span>
+              </div>
+              <div className="w-full h-2 bg-gray-300 rounded-full">
+                <div className="h-2 bg-gradient-to-r from-purple-600 to-red-600 rounded-full" style={{ width: '60%' }}></div>
+              </div>
+            </div>
+
           </div>
 
           {/* Journey Section */}
@@ -135,7 +153,7 @@ const AboutComponent = () => {
                 </div>
                 <div className="md:ml-8">
                   <h4 className="md:text-xl font-bold text-gray-200">Started Learning Web Development</h4>
-                  <p className="text-gray-300">
+                  <p className="text-gray-400 mt-2 md:mt-0">
                     Began my journey with HTML, CSS, and JavaScript to build static websites.
                   </p>
                 </div>
@@ -149,9 +167,24 @@ const AboutComponent = () => {
                   </div>
                 </div>
                 <div className="md:ml-8">
-                  <h4 className="md:text-xl font-bold text-gray-200">Mastered ReactJS</h4>
-                  <p className="text-gray-300">
-                    Took my skills further and mastered ReactJS to build dynamic web applications.
+                  <h4 className="md:text-xl font-bold text-gray-200">Started Learning Web Development</h4>
+                  <p className="text-gray-400 mt-2 md:mt-0">
+                    Started documenting my journey of becoming a MERN Stack Developer. Having to learn ReactJS, TailwindCSS, Nodejs, and MondoDB to build Dyanmic websites (Web Application).
+                  </p>
+                </div>
+              </div>
+
+              {/* Journey 3 */}
+              <div className="flex flex-col md:flex-row items-center mb-8">
+                <div className="flex-shrink-0">
+                  <div className="w-16 h-16 rounded-full bg-gradient-to-r from-purple-600 to-red-600 text-white flex items-center justify-center">
+                    2022
+                  </div>
+                </div>
+                <div className="md:ml-8">
+                  <h4 className="md:text-xl font-bold text-gray-200">Mastered My MERN Stack Skills</h4>
+                  <p className="text-gray-400 mt-2 md:mt-0">
+                    Took my skills further and mastered ReactJS, TailwindCSS, Nodejs, and MondoDB to build Dyanmic Web Application.
                   </p>
                 </div>
               </div>
@@ -165,7 +198,7 @@ const AboutComponent = () => {
                 </div>
                 <div className="md:ml-8">
                   <h4 className="md:text-xl font-bold text-gray-200">Full-Stack Developer</h4>
-                  <p className="text-gray-300">
+                  <p className="text-gray-400 mt-2 md:mt-0">
                     Expanded my knowledge to become a full-stack developer, integrating frontend and backend technologies.
                   </p>
                 </div>
@@ -178,4 +211,4 @@ const AboutComponent = () => {
   );
 };
 
-export default AboutComponent;
+export default About;
