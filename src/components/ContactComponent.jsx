@@ -1,10 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const ContactComponent = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Construct the mailto URL
+    const mailtoLink = `mailto:abdulquadrimahmud06@gmail.com?subject=${encodeURIComponent(
+      `Message from ${formData.name}`
+    )}&body=${encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+    )}`;
+
+    // Open the mailto link
+    window.location.href = mailtoLink;
+  };
+
   return (
     <section
       id="contact"
-      className="my-20 bg-gradient-to-r from-purple-600 to-red-600 text-white py-12 px-6 rounded-lg shadow-lg max-w-4xl mx-auto"
+      className="my-20 bg-gradient-to-r from-purple-600 to-red-600 text-white py-12 px-6 rounded-lg shadow-lg md:max-w-4xl mx-auto"
     >
       <div className="text-center">
         {/* Section Title */}
@@ -17,28 +45,37 @@ const ContactComponent = () => {
         </p>
 
         {/* Contact Form */}
-        <form className="space-y-6">
+        <form onSubmit={handleSubmit} className="space-y-6">
           <div>
             <input
               type="text"
+              name="name"
               placeholder="Your Name"
-              className="w-full px-4 py-3 rounded-md bg-white text-black focus:outline-none focus:ring-2 focus:ring-purple-300"
+              className="w-full px-4 py-3 rounded-md bg-slate-200 text-black focus:outline-none focus:ring-2 focus:ring-purple-300"
+              value={formData.name}
+              onChange={handleChange}
               required
             />
           </div>
           <div>
             <input
               type="email"
+              name="email"
               placeholder="Your Email"
-              className="w-full px-4 py-3 rounded-md bg-white text-black focus:outline-none focus:ring-2 focus:ring-purple-300"
+              className="w-full px-4 py-3 rounded-md bg-slate-200 text-black focus:outline-none focus:ring-2 focus:ring-purple-300"
+              value={formData.email}
+              onChange={handleChange}
               required
             />
           </div>
           <div>
             <textarea
+              name="message"
               rows="4"
               placeholder="Your Message"
-              className="w-full px-4 py-3 rounded-md bg-white text-black focus:outline-none focus:ring-2 focus:ring-purple-300"
+              className="w-full px-4 py-3 rounded-md bg-slate-200 text-black focus:outline-none focus:ring-2 focus:ring-purple-300"
+              value={formData.message}
+              onChange={handleChange}
               required
             ></textarea>
           </div>

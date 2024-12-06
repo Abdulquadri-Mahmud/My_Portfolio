@@ -4,11 +4,11 @@ import 'aos/dist/aos.css'; // Import AOS styles
 
 const Footer = () => {
   useEffect(() => {
-    AOS.init({ duration: 1200 }); // Initialize AOS with animation duration
+    AOS.init({ duration: 700 }); // Initialize AOS with animation duration
   }, []);
 
   return (
-    <footer className="bg-black text-white py-20 px-6" id="footer">
+    <footer className="bg-black text-white py-20 pb-4 px-6" id="footer">
       <div className="container mx-auto text-center">
         {/* Footer Title */}
         <h2
@@ -46,11 +46,14 @@ const Footer = () => {
 
         {/* Footer Bottom */}
         <div className="text-gray-500 text-sm">
-          <p data-aos="" className="">
+          <p data-aos="">
             &copy; {new Date().getFullYear()} AdeyemiCODE. All Rights Reserved.
           </p>
           <p data-aos="">
             Crafted with ❤️ using ReactJS & TailwindCSS.
+          </p>
+          <p data-aos="">
+            Thank you for visiting my portfolio site. — AdeyemiCODE
           </p>
         </div>
       </div>

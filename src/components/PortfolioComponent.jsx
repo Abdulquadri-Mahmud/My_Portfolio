@@ -10,24 +10,73 @@ const PortfolioComponent = () => {
   // Sample projects data
   const projects = [
     {
-      title: 'Personal Portfolio',
-      description: 'A personal portfolio website built with ReactJS and TailwindCSS to showcase my skills and projects.',
-      image: '/path-to-your-image1.jpg',
-      demoLink: 'https://your-portfolio-link.com',
-      repoLink: 'https://github.com/your-username/portfolio',
+      title: 'Lightcietech Limited',
+      description: `Lightcitech Limited is a specialized website designed for an earthing and lighting company. It showcases innovative solutions in electrical grounding and advanced lighting systems, emphasizing safety, efficiency, and sustainability. The platform provides detailed insights into their services, projects, and expertise, ensuring clients can explore and connect with a trusted industry leader.`,
+      image: '/lightcitechlimited.png',
+      demoLink: 'https://www.lightcietechlimited.org/',
+      repoLink: 'https://github.com/Abdulquadri-Mahmud/Litghtcietech-website.git',
     },
     {
-      title: 'E-Commerce Website',
-      description: 'A fully functional e-commerce website with shopping cart, product pages, and payment integration.',
-      image: '/path-to-your-image2.jpg',
-      demoLink: 'https://your-ecommerce-demo.com',
-      repoLink: 'https://github.com/your-username/e-commerce-website',
-    },
-    {
-      title: 'Blog Platform',
-      description: 'A blog platform where users can create and share articles. Built using ReactJS, NodeJS, and MongoDB.',
-      image: '/path-to-your-image3.jpg',
+      title: 'ADEXIFY (E-Commerce)',
+      description: `Adexify is a personal e-commerce project designed to empower upcoming online vendors. It provides an intuitive platform to help vendors grow their businesses faster and more efficiently. With Adexify, managing and showcasing products becomes seamless, enabling vendors to reach more customers and scale their operations effortlessly.`,
+      image: '/p.png',
       demoLink: 'https://your-blog-platform-demo.com',
+      repoLink: 'https://github.com/your-username/blog-platform',
+    },
+    {
+      title: 'MAGKKFOOTBALLTALK',
+      description: `This website was built to transform your sports experience. Stay updated with the latest sports news, copy winning bestslips codes effortlessly, and shop premium gaming gadgets—all in one platform. Whether you're a fan or a gamer, it brings sports to your fingertips like never before.`,
+      image: '/magkk.png',
+      demoLink: 'https://magkfootball.vercel.app/',
+      repoLink: 'https://github.com/Abdulquadri-Mahmud/magkfootball.git',
+    },
+    {
+      title: 'MJ\'s Food',
+      description: 'This project is a personal initiative designed to enhance my skills in frontend development. Built with ReactJS and TailwindCSS, it showcases modern web development practices, including responsive design, component-based architecture, and optimized performance. The project serves as a hands-on platform to deepen my expertise and implement advanced features like animations, state management, and reusable components.',
+      image: '/mjsfood.png',
+      demoLink: 'https://mj-s-food.vercel.app/',
+      repoLink: 'https://github.com/Abdulquadri-Mahmud/MJ-s_Food.git',
+    },
+    {
+      title: 'Carint',
+      description: 'This project is a personal initiative designed to enhance my skills in frontend development. Built with ReactJS and TailwindCSS, it showcases modern web development practices, including responsive design, component-based architecture, and optimized performance. The project serves as a hands-on platform to deepen my expertise and implement advanced features like animations, state management, and reusable components.',
+      image: '/p2.png',
+      demoLink: 'https://carint-shipping-website.vercel.app/',
+      repoLink: 'https://github.com/your-username/blog-platform',
+    },
+    {
+      title: 'MediPlus',
+      description: 'This project is a personal initiative designed to enhance my skills in frontend development. Built with ReactJS and TailwindCSS, it showcases modern web development practices, including responsive design, component-based architecture, and optimized performance. The project serves as a hands-on platform to deepen my expertise and implement advanced features like animations, state management, and reusable components.',
+      image: '/p3.png',
+      demoLink: 'https://mediplus-eight.vercel.app/',
+      repoLink: 'https://github.com/your-username/blog-platform',
+    },
+    {
+      title: 'NIKI CLOTHING',
+      description: 'This project is a personal initiative designed to enhance my skills in frontend development. Built with ReactJS and TailwindCSS, it showcases modern web development practices, including responsive design, component-based architecture, and optimized performance. The project serves as a hands-on platform to deepen my expertise and implement advanced features like animations, state management, and reusable components.',
+      image: '/p4.png',
+      demoLink: 'https://niki-clothing.vercel.app/',
+      repoLink: 'https://github.com/your-username/blog-platform',
+    },
+    {
+      title: 'MJ CakeZone',
+      description: 'This project is a personal initiative designed to enhance my skills in frontend development. Built with ReactJS and TailwindCSS, it showcases modern web development practices, including responsive design, component-based architecture, and optimized performance. The project serves as a hands-on platform to deepen my expertise and implement advanced features like animations, state management, and reusable components.',
+      image: '/p5.png',
+      demoLink: 'https://mj-cakazone.vercel.app/',
+      repoLink: 'https://github.com/your-username/blog-platform',
+    },
+    {
+      title: 'Ade-Space',
+      description: 'This project is a personal initiative designed to enhance my skills in frontend development. Built with ReactJS and TailwindCSS, it showcases modern web development practices, including responsive design, component-based architecture, and optimized performance. The project serves as a hands-on platform to deepen my expertise and implement advanced features like animations, state management, and reusable components.',
+      image: '/p6.png',
+      demoLink: 'https://ade-space.vercel.app/',
+      repoLink: 'https://github.com/your-username/blog-platform',
+    },
+    {
+      title: 'Bliss',
+      description: 'This project is a personal initiative designed to enhance my skills in frontend development. Built with ReactJS and TailwindCSS, it showcases modern web development practices, including responsive design, component-based architecture, and optimized performance. The project serves as a hands-on platform to deepen my expertise and implement advanced features like animations, state management, and reusable components.',
+      image: '/p7.png',
+      demoLink: 'https://bliss-websites.vercel.app/',
       repoLink: 'https://github.com/your-username/blog-platform',
     },
     // Add more projects here
@@ -91,14 +140,12 @@ const PortfolioComponent = () => {
             <div
               key={index}
               data-aos="zoom-in-up" // Adding unique animation to each portfolio item
-              className="relative bg-gray-800 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 group"
+              className="relative bg-gray-950 opacity-50 p-3 rounded-lg shadow-lg transition-transform transform hover:scale-105 group"
             >
               {/* Project Image */}
               <div className="overflow-hidden rounded-lg mb-4">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-64 object-cover transition-transform transform group-hover:scale-110"
+                <img src={project.image} alt={project.title}
+                  className="max-w-full h-64 rounded-md transition-transform transform group-hover:scale-110"
                 />
               </div>
 
@@ -106,24 +153,14 @@ const PortfolioComponent = () => {
               <h3 className="text-2xl font-semibold text-gray-100 mb-4">{project.title}</h3>
 
               {/* Project Description */}
-              <p className="text-gray-400 mb-6">{project.description}</p>
+              <p className="text-gray-400 mb-6 text-start">{project.description}</p>
 
               {/* Links */}
               <div className="flex justify-between">
-                <a
-                  href={project.demoLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-purple-600 hover:text-purple-500 transition duration-300"
-                >
+                <a href={project.demoLink} target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-500 transition duration-300">
                   View Demo
                 </a>
-                <a
-                  href={project.repoLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-purple-600 hover:text-purple-500 transition duration-300"
-                >
+                <a href={project.repoLink} target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-500 transition duration-300">
                   GitHub Repo
                 </a>
               </div>
