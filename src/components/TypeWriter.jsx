@@ -24,7 +24,7 @@ export default function TypeWriter() {
         <span>
             {/* Style will be inherited from the parent element */}
             <Typewriter
-            words={['I\'m  AdeyemiCODE', 'I\'m Frontend Website Developer', 'Also a MERN Stack Developer']}
+            words={['I\'m  AdeyemiCODE', 'I\'m a Frontend Website Developer', 'Also a MERN Stack Developer']}
             loop={'infinite'}
             cursor
             cursorStyle='|'
