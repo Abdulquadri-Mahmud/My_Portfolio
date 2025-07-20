@@ -1,15 +1,17 @@
 import React from 'react'
 import Hero from '../layout/Hero'
 import AboutComponent from '../components/AboutComponent'
-import PortfolioComponent from '../components/PortfolioComponent'
 import ServicesComponent from '../components/ServicesComponent'
 import ContactComponent from '../components/ContactComponent'
+import SkillsAndJourney from '../components/SkillsAndJourney'
+import PortfolioComponent from '../components/PortfolioComponent'
 
 export default function Home() {
   return (
-    <div>
+    <div className='bg-black md:p-10 p-2'>
       <Hero/>
       <AboutComponent/>
+      <SkillsAndJourney/>
       <PortfolioComponent/>
       <ServicesComponent/>
       <ContactComponent/>

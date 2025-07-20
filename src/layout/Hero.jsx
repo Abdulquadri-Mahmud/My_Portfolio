@@ -10,48 +10,42 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative bg-black text-white h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Gradient with Parallax Effect */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black via-purple-600 to-red-600 opacity-30 z-0" data-aos="fade-in" data-aos-delay="200" style={{ transform: 'translateZ(0)', backgroundAttachment: 'fixed' }}></div>
+    <section className="rounded-lg relative z-10 bg-white text-gray-900 md:min-h-screen md:px-24 md:py-0 py-20 flex items-center justify-center px-4">
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+        {/* Text Content */}
+        <div className="text-left max-w-2xl" data-aos="fade-right">
+          <div data-aos="fade-up" data-aos-delay="100">
+            <h1 className='md:text-5xl text-4xl font-bold text-black'>HI <span aria-label="waving hand" role="img">👋</span>! I'm  AdeyemiCODE, <br /> Frontend Website Developer</h1>
+            
+            {/* <TypeWriter /> */}
+          </div>
 
-      <div className="container mx-auto text-center md:px-6 px-3 relative z-10">
-        {/* Hero Heading with animation */}
-        
-        <div className="">
-          <TypeWriter/>
+          {/* Tagline */}
+          <p data-aos="fade-up" data-aos-delay="200" className="font-medium text-md md:text-xl text-gray-700 mt-6 mb-10">
+            Proficient Frontend & MERN Stack Developer | HTML, CSS, TailwindCSS, JavaScript, ReactJS, NodeJS & MongoDB Expert | Crafting Engaging & Functional Web Solutions
+          </p>
+
+          {/* CTA Buttons */}
+          <div className="flex justify-center md:justify-start gap-4 flex-wrap" data-aos="fade-up" data-aos-delay="300">
+            <Link to="/portfolio" className="border-b-2 border-r-2 border-black text-black hover:bg-gray-900 py-2 px-3 md:px-8 text-lg font-semibold transition duration-300">
+              View Portfolio
+            </Link>
+            <Link to="/contact" className="bg-black text-white hover:bg-gray-900 hover:text-white py-2 px-3 md:px-8 text-lg font-semibold transition duration-300">
+              Contact Me
+            </Link>
+          </div>
         </div>
 
-        {/* Tagline with animation */}
-        <p data-aos="fade-up" data-aos-delay="200" className="font-medium text-xl max-w-3xl mx-auto md:text-2xl text-gray-300 mb-8">
-          A Proficient Frontend / Mern Stack Developer | HTML, CSS, TailwindCSS, Javascript, ReactJS NodeJS & MongoDB Expert | Building Beautiful & Functional Websites
-        </p>
+        {/* Image */}
+        <div data-aos="fade-right"  className="w-full md:w-1/2 relative flex items-center justify-center -z-10">
+          {/* Circle Behind Image */}
+          <div className="absolute max-w-xl h-2xl md:w-[100%] md:h-96 bg-zinc-100 rounded-xl top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
 
-        {/* CTA buttons with hover effects */}
-        <div className="flex justify-center gap-6" data-aos="fade-up" data-aos-delay="400">
-          <Link to="/portfolio" className="inline-block bg-white text-black hover:text-white py-3 md:px-8 px-4 rounded-lg text-lg font-semibold transition duration-300 ease-in-out hover:bg-purple-700 transform hover:scale-110"> View Portfolio</Link>
-          <Link to="/contact" className="inline-block bg-transparent border-2 border-white text-white py-3 md:px-8 px-4 rounded-lg text-lg font-semibold transition duration-300 ease-in-out hover:bg-white hover:text-black transform hover:scale-110"> Contact Me</Link>
+          {/* Actual Image */}
+          <img src="/img/img.jpg" alt="Developer working" className="w-full h-auto max-w-md border-2 border-black mx-auto rounded-tr-[30%] rounded-xl shadow-lg relative z-10"/>
         </div>
-      </div>
 
-      {/* Moving Circles */}
-      <div className="absolute inset-0 flex justify-center items-center z-0">
-        <div className="w-96 h-96 rounded-full bg-gradient-to-r from-purple-600 to-black opacity-30 animate-move-one"></div>
-        <div className="w-80 h-80 rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 opacity-30 animate-move-two"></div>
       </div>
-
-      {/* Floating Object (Bouncing Tag) Behind the Text */}
-      <div className="absolute top-1/2 left-1/4 transform -translate-x-1/2 -translate-y-1/2 z-0" data-aos="fade-left" data-aos-delay="600">
-        <div className="w-40 h-40 bg-purple-600 rounded-full shadow-2xl animate-bounce-slow"></div>
-      </div>
-
-      <div className="absolute top-0 left-2/4 transform -translate-x-1/2 -translate-y-1/2 z-0" data-aos="fade-left" data-aos-delay="600">
-        <div className="w-40 h-40 bg-purple-600 opacity-10 rounded-full shadow-2xl animate-bounce-slow"></div>
-      </div>
-
-      <div className="absolute top-0 right-3/4 transform -translate-x-1/2 -translate-y-1/2 z-0" data-aos="fade-left" data-aos-delay="600">
-        <div className="w-40 h-40 bg-purple-600 opacity-10 rounded-full shadow-2xl animate-move-one"></div>
-      </div>
-
     </section>
   );
 };

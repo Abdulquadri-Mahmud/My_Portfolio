@@ -90,15 +90,15 @@ const ServicesComponent = () => {
   };
 
   return (
-    <section className="bg-black text-white pt-20 px-6" id="services">
+    <section className="bg-white text-black mt-12 md:p-5 py-5 rounded-lg" id="services">
       <div className="container mx-auto text-center lg:text-left">
         {/* Section Title */}
-        <h2 data-aos="fade-up" className="text-4xl md:text-5xl text-center font-extrabold leading-tight mb-16 text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-red-600">
+        <h2 data-aos="fade-up" className="text-3xl md:text-5xl text-center font-extrabold leading-tight mb-4  text-black">
           My Services
         </h2>
 
         {/* Services Overview */}
-        <p data-aos="fade-up" className="text-lg md:text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
+        <p data-aos="fade-up" className="md:text-xl text-center px-3 text-sm text-black md:mb-12 mb-6 max-w-2xl mx-auto">
           As a frontend developer, I offer a range of services to help you build a beautiful, functional, and user-friendly web presence. Let me bring your ideas to life with the latest technologies and design principles.
         </p>
 
@@ -107,13 +107,13 @@ const ServicesComponent = () => {
           <Slider {...settings}>
             {services.map((service, index) => (
                 <div className="p-2" key={index}>
-                    <div className="relative bg-opacity-50 bg-slate-800 backdrop-blur-sm rounded-lg shadow-lg py-6 px-4 transition-transform transform group">
+                    <div className="relative bg-gray-900 rounded-lg shadow-lg py-6 px-4 transition-transform transform group">
                         <div className="flex justify-center mb-4">
                             <i className={`${service.icon} text-4xl text-purple-600`} />  {/* Icon with Tailwind classes */}
                         </div>
                         <h3 className="text-2xl font-semibold text-gray-100 mb-4">{service.title}</h3>
-                        <p className="text-gray-300 mb-6">{service.description}</p>
-                        <a href="/contact" className="inline-block bg-gradient-to-r from-purple-600 to-red-600 text-white py-3 px-8 rounded-lg text-lg font-semibold transition duration-300 ease-in-out hover:bg-indigo-700 transform hover:scale-110">
+                        <p className="text-white mb-6">{service.description}</p>
+                        <a href="/contact" className="inline-block border-b border-r border-white text-white py-3 px-8 text-lg font-semibold transition duration-300 ease-in-out hover:bg-indigo-700 transform hover:scale-110">
                             Get in Touch
                         </a>
                     </div>

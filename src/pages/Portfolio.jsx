@@ -133,7 +133,7 @@ const PortfolioComponent = () => {
   };
 
   return (
-    <section className="bg-black text-white py-0 md:px-6 px-3" id="portfolio">
+    <section className="bg-black text-white py-0 md:px-6 px-3 rounded-lg" id="portfolio">
       <div className="container mx-auto text-center lg:text-left">
         {/* Section Title */}
         <h2

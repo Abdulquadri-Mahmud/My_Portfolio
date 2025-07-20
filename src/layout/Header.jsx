@@ -18,49 +18,40 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="shadow-md sticky top-0 z-50 bg-black text-white">
-      <nav aria-label="Global" className="flex items-center justify-between p-6 max-w-screen-xl mx-auto">
-        {/* Logo Section */}
-        <div className="flex items-center space-x-3">
-          <Link
-            to="/"
-            className="font-extrabold text-3xl text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-red-600 text-white transition duration-300 ease-in-out transform hover:scale-110"
-          >
-            AdeyemiCODE
+    <header className="shadow-sm sticky top-0 z-50 bg-white text-gray-900 ">
+      <nav aria-label="Global" className="flex items-center justify-between px-3 py-4 max-w-screen-xl mx-auto">
+        {/* Logo */}
+        <div className="flex items-center space-x-2">
+          <Link to="/" className="text-2xl font-bold text-black hover:text-black transition">
+            Adeyemi<span className="text-gray-800">CODE</span>
           </Link>
         </div>
 
-        {/* Desktop Navigation Links */}
-        <div className="hidden lg:flex lg:gap-x-12">
+        {/* Desktop Navigation */}
+        <div className="hidden lg:flex lg:gap-x-10">
           {navigation.map((item) => (
-            <Link
-              key={item.name}
-              to={item.path}
-              className="text-lg font-semibold text-white hover:text-indigo-600 transition duration-300 ease-in-out transform hover:scale-105"
-            >
+            <Link key={item.name} to={item.path} className="text-base font-medium text-gray-700 hover:text-black transition">
               {item.name}
             </Link>
           ))}
         </div>
 
-        {/* User Actions */}
-        <div className="flex gap-6 items-center">
-          <div className="hidden lg:flex">
-            <Link
-              to="/contact"
-              className="text-white bg-gradient-to-r from-purple-600 to-red-600 px-4 py-2 rounded-md font-semibold transition duration-300 ease-in-out transform hover:scale-105"
-            >
+        {/* Actions */}
+        <div className="flex items-center gap-4">
+          {/* CTA */}
+          <div className="hidden lg:block">
+            <Link to="/contact" className="bg-black text-white px-4 py-2 rounded-md font-medium hover:bg-black transition"> 
               Hire Me
             </Link>
           </div>
-
-          {/* Mobile Menu Button */}
         </div>
       </nav>
+
+      {/* Mobile Sidebar */}
       <div className="md:hidden block">
-        <Sidebar/>
+        <Sidebar />
       </div>
-      {/* Mobile Menu Dialog */}
     </header>
+
   );
 }

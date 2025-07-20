@@ -1,209 +1,68 @@
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // Import AOS styles
-import { Link } from 'react-router-dom';
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 const AboutComponent = () => {
   useEffect(() => {
-    AOS.init({ duration: 1200 }); // Initialize AOS animations with a duration of 1200ms
+    AOS.init({ duration: 1200 });
   }, []);
 
   return (
-    <section className="bg-black text-white py-20 md:px-6 px-2" id="about">
-      <div className="container mx-auto text-center">
+    <section className="bg-white my-12 py-5 md:px-6 px-4" id="about">
+
+      <div className="container mx-auto max-w-7xl text-black">
         {/* Section Title */}
-        <h2 data-aos="fade-up" className="text-4xl md:text-center text-start md:text-5xl font-bold leading-tight mb-8 text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-red-600">
+        <h2 data-aos="fade-up" className="text-4xl md:text-5xl font-extrabold mb-12 tracking-tight animated-underline">
           About Me
         </h2>
 
-        {/* About Content */}
-        <div className="flex flex-col-reverse md:flex-row justify-evenly gap-12 mb-16">
-          {/* Image Section */}
-          <div data-aos="fade-right" className="flex justify-center md:justify-start mb-8 md:mb-0">
-            <div className="relative">
-              <img src="/my_image.jpg" alt="Profile" className="rounded-full w-[350px] h-[400px] object-cover border-4 border-gradient-to-r from-purple-600 to-red-600 shadow-xl transition-transform transform hover:scale-105"/>
-              {/* Hover Effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-red-600 opacity-40 rounded-full"></div>
-            </div>
+        {/* Image & Content Side by Side */}
+        <div className="flex flex-col md:flex-row items-center gap-8">
+          {/* Image */}
+          <div data-aos="fade-right" className="md:w-1/3 w-full flex justify-center">
+            <img src="/img/img.jpg" alt="AdeyemiCODE" className="rounded-lg shadow-lg border-4 max-h-96 object-cover" style={{ minWidth: "300px" }}/>
           </div>
 
-          {/* Text Section */}
-          <div data-aos="fade-left" className="flex text-sm flex-col justify-start md:max-w-3xl">
-            <p className="text-xl text-start text-gray-400 mb-6">
-              Hello! I'm AdeyemiCODE, a frontend and Mern Stack developer with a passion for
-              creating beautiful and dynamic user interfaces. I specialize in, HTML, CSS JAVASCRIPT
-              TailwindCSS, ReactJS,MondoDB and NodeJS , and building interactive web applications.
+          {/* Text Content */}
+          <div data-aos="fade-left" className="md:w-2/3 text-left space-y-6 md:text-lg text-sm text-gray-800 leading-relaxed">
+            <p>
+              Hello! I'm <strong>AdeyemiCODE <span aria-label="waving hand" role="img">👋</span>!</strong>, a Frontend and MERN Stack
+              Developer passionate about crafting beautiful, user-friendly, and
+              dynamic web applications. I specialize in HTML, CSS, JavaScript,
+              TailwindCSS, ReactJS, MongoDB, and NodeJS.
             </p>
 
-            <p className="text-xl text-start text-gray-400 mb-6">
-              With over 3 years of experience, I’ve worked on a variety of
-              projects, continuously learning and staying up-to-date with the
-              latest trends and technologies in the industry. My goal is to build
-              websites that are not only functional but also user-friendly and
-              visually captivating.
+            <p>
+              With over 3 years of experience, I have worked on diverse projects
+              as a freelancer and in professional roles, continuously learning
+              and adapting to new technologies and industry trends. My focus is
+              on building functional, efficient, and visually captivating
+              websites.
             </p>
 
-            <p className="text-xl text-start text-gray-400 mb-6">
-              Dynamic and innovative Front-end Website Instructor at Al-Ameen ITHUB, adept in HTML, CSS and JavaScript. Specialized in elevating web development skills through engaging lectures and hands-on workshops, significantly enhancing student proficiency in web technologies. Known for exceptional mentor-ship and a keen ability to optimize web content, blending technical prowess with strong instructional acumen.
-            </p>
-            <p className="text-xl text-start text-gray-400 mb-6">
-              Motivated student seeking career in web development. Hardworking and friendly person with strong organization and time management skills. Eager to support and learn from development teams to deliver well-designed mobile and web applications
+            <p>
+              I have contributed as a Frontend Developer at{" "}
+              <strong>Sysbeans</strong> and <strong>Fyndah</strong>, gaining
+              hands-on experience delivering scalable web solutions.
+              Additionally, I serve as a Front-end Instructor at Al-Ameen ITHUB,
+              delivering engaging lectures and workshops in HTML, CSS, and
+              JavaScript, mentoring the next generation of developers.
             </p>
 
-            <Link to="/contact" data-aos="fade-up" className="inline-block mt-6 bg-gradient-to-r from-purple-600 to-red-600 text-white py-3 px-8 rounded-lg text-lg font-semibold transition duration-300 ease-in-out hover:bg-indigo-700 transform hover:scale-105">
+            <p>
+              I am a motivated, hardworking, and friendly professional eager to
+              contribute to and grow with development teams by delivering
+              well-designed mobile and web applications.
+            </p>
+
+            <Link
+              to="/contact"
+              data-aos="fade-up"
+              className="inline-block mt-4 bg-black hover:bg-black text-white py-2 px-8 rounded-lg font-semibold shadow-md transition duration-300 ease-in-out transform hover:scale-105"
+            >
               Get in Touch
             </Link>
-          </div>
-        </div>
-
-        {/* Skills & Journey Section Side by Side */}
-        <div className="flex flex-col md:flex-row justify-between gap-12 py-16">
-          {/* Skills Section */}
-          <div data-aos="fade-up" className="flex flex-col gap-6 text-center md:text-left md:w-1/2">
-            <h3 className="text-3xl font-bold text-purple-600 mb-4">Skills</h3>
-
-            {/* Skill 1 */}
-            <div className="mb-6">
-              <div className="flex justify-between mb-2">
-                <span className="text-gray-300">HTML</span>
-                <span className="font-semibold text-gray-300">95%</span>
-              </div>
-              <div className="w-full h-2 bg-gray-300 rounded-full">
-                <div className="h-2 bg-gradient-to-r from-purple-600 to-red-600 rounded-full" style={{ width: '95%' }}></div>
-              </div>
-            </div>
-            {/* Skill 2 */}
-            <div className="mb-6">
-              <div className="flex justify-between mb-2">
-                <span className="text-gray-300">CSS</span>
-                <span className="font-semibold text-gray-300">85%</span>
-              </div>
-              <div className="w-full h-2 bg-gray-300 rounded-full">
-                <div className="h-2 bg-gradient-to-r from-purple-600 to-red-600 rounded-full" style={{ width: '85%' }}></div>
-              </div>
-            </div>
-
-            {/* Skill 3 */}
-            <div className="mb-6">
-              <div className="flex justify-between mb-2">
-                <span className="text-gray-300">JavaScript</span>
-                <span className="font-semibold text-gray-300">65%</span>
-              </div>
-              <div className="w-full h-2 bg-gray-300 rounded-full">
-                <div className="h-2 bg-gradient-to-r from-purple-600 to-red-600 rounded-full" style={{ width: '65%' }}></div>
-              </div>
-            </div>
-
-            {/* Skill 4 */}
-            <div className="mb-6">
-              <div className="flex justify-between mb-2">
-                <span className="text-gray-300">TailwindCSS</span>
-                <span className="font-semibold text-gray-300">80%</span>
-              </div>
-              <div className="w-full h-2 bg-gray-300 rounded-full">
-                <div className="h-2 bg-gradient-to-r from-purple-600 to-red-600 rounded-full" style={{ width: '80%' }}></div>
-              </div>
-            </div>
-
-            {/* Skill 5 */}
-            <div className="mb-6">
-              <div className="flex justify-between mb-2">
-                <span className="text-gray-300">ReactJS</span>
-                <span className="font-semibold text-gray-300">75%</span>
-              </div>
-              <div className="w-full h-2 bg-gray-300 rounded-full">
-                <div className="h-2 bg-gradient-to-r from-purple-600 to-red-600 rounded-full" style={{ width: '75%' }}></div>
-              </div>
-            </div>
-
-            {/* Skill 6 */}
-            <div className="mb-6">
-              <div className="flex justify-between mb-2">
-                <span className="text-gray-300">NodeJS</span>
-                <span className="font-semibold text-gray-300">50%</span>
-              </div>
-              <div className="w-full h-2 bg-gray-300 rounded-full">
-                <div className="h-2 bg-gradient-to-r from-purple-600 to-red-600 rounded-full" style={{ width: '50%' }}></div>
-              </div>
-            </div>
-
-            {/* Skill 7 */}
-            <div className="mb-6">
-              <div className="flex justify-between mb-2">
-                <span className="text-gray-300">MongoDB</span>
-                <span className="font-semibold text-gray-300">60%</span>
-              </div>
-              <div className="w-full h-2 bg-gray-300 rounded-full">
-                <div className="h-2 bg-gradient-to-r from-purple-600 to-red-600 rounded-full" style={{ width: '60%' }}></div>
-              </div>
-            </div>
-
-          </div>
-
-          {/* Journey Section */}
-          <div data-aos="fade-up" className="md:w-1/2">
-            <h3 className="text-3xl font-bold text-purple-600 mb-6">My Journey</h3>
-            <div className="space-y-8">
-              {/* Journey 1 */}
-              <div className="flex flex-col md:flex-row items-center mb-8">
-                <div className="flex-shrink-0">
-                  <div className="w-16 h-16 rounded-full bg-gradient-to-r from-purple-600 to-red-600 text-white flex items-center justify-center">
-                    2021
-                  </div>
-                </div>
-                <div className="md:ml-8">
-                  <h4 className="md:text-xl font-bold text-gray-200">Started Learning Web Development</h4>
-                  <p className="text-gray-400 mt-2 md:mt-0">
-                    Began my journey with HTML, CSS, and JavaScript to build static websites.
-                  </p>
-                </div>
-              </div>
-
-              {/* Journey 2 */}
-              <div className="flex flex-col md:flex-row items-center mb-8">
-                <div className="flex-shrink-0">
-                  <div className="w-16 h-16 rounded-full bg-gradient-to-r from-purple-600 to-red-600 text-white flex items-center justify-center">
-                    2022
-                  </div>
-                </div>
-                <div className="md:ml-8">
-                  <h4 className="md:text-xl font-bold text-gray-200">Started Learning Web Development</h4>
-                  <p className="text-gray-400 mt-2 md:mt-0">
-                    Started documenting my journey of becoming a MERN Stack Developer. Having to learn ReactJS, TailwindCSS, Nodejs, and MondoDB to build Dyanmic websites (Web Application).
-                  </p>
-                </div>
-              </div>
-
-              {/* Journey 3 */}
-              <div className="flex flex-col md:flex-row items-center mb-8">
-                <div className="flex-shrink-0">
-                  <div className="w-16 h-16 rounded-full bg-gradient-to-r from-purple-600 to-red-600 text-white flex items-center justify-center">
-                    2022
-                  </div>
-                </div>
-                <div className="md:ml-8">
-                  <h4 className="md:text-xl font-bold text-gray-200">Mastered My MERN Stack Skills</h4>
-                  <p className="text-gray-400 mt-2 md:mt-0">
-                    Took my skills further and mastered ReactJS, TailwindCSS, Nodejs, and MondoDB to build Dyanmic Web Application.
-                  </p>
-                </div>
-              </div>
-
-              {/* Journey 3 */}
-              <div className="flex flex-col md:flex-row items-center">
-                <div className="flex-shrink-0">
-                  <div className="w-16 h-16 rounded-full bg-gradient-to-r from-purple-600 to-red-600 text-white flex items-center justify-center">
-                    2024
-                  </div>
-                </div>
-                <div className="md:ml-8">
-                  <h4 className="md:text-xl font-bold text-gray-200">Full-Stack Developer</h4>
-                  <p className="text-gray-400 mt-2 md:mt-0">
-                    Expanded my knowledge to become a full-stack developer, integrating frontend and backend technologies.
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
