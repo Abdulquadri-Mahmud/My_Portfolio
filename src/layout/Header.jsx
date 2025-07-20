@@ -11,7 +11,7 @@ const navigation = [
   { name: 'Portfolio', path: '/portfolio' },
   { name: 'Services', path: '/services' },
   { name: 'Contact', path: '/contact' },
-  { name: 'Resume', path: '/resume' },
+  { name: 'Resume', path: '/resume.pdf', download: true }
 ];
 
 export default function Header() {
