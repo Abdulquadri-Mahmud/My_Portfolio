@@ -11,7 +11,7 @@ const navigation = [
   { name: 'Portfolio', path: '/portfolio' },
   { name: 'Services', path: '/services' },
   { name: 'Contact', path: '/contact' },
-  { name: 'Resume', path: '/resume.pdf', download: true }
+  { name: 'Resume', path: '/img/Myresume.pdf', download: true }
 ];
 
 export default function Header() {
@@ -29,11 +29,23 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <div className="hidden lg:flex lg:gap-x-10">
-          {navigation.map((item) => (
-            <Link key={item.name} to={item.path} className="text-base font-medium text-gray-700 hover:text-black transition">
-              {item.name}
-            </Link>
-          ))}
+          {navigation.map((item) =>
+            item.download ? (
+              <a
+                key={item.name}
+                href={item.path}
+                download
+                className="text-black hover:underline"
+              >
+                {item.name}
+              </a>
+            ) : (
+              <Link key={item.name} to={item.path} className="text-black hover:underline">
+                {item.name}
+              </Link>
+            )
+          )}
+
         </div>
 
         {/* Actions */}
