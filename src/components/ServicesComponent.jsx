@@ -4,6 +4,7 @@ import 'aos/dist/aos.css'; // Import AOS styles
 import Slider from 'react-slick'; // Import Slider component from react-slick
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from 'react-router-dom';
 
 const ServicesComponent = () => {
   useEffect(() => {
@@ -113,9 +114,9 @@ const ServicesComponent = () => {
                         </div>
                         <h3 className="text-2xl font-semibold text-gray-100 mb-4">{service.title}</h3>
                         <p className="text-white mb-6">{service.description}</p>
-                        <a href="/contact" className="inline-block border-b border-r border-white text-white py-3 px-8 text-lg font-semibold transition duration-300 ease-in-out hover:bg-indigo-700 transform hover:scale-110">
+                        <Link to="/contact" className="inline-block border-b border-r border-white text-white py-3 px-8 text-lg font-semibold transition duration-300 ease-in-out hover:bg-indigo-700 transform hover:scale-110">
                             Get in Touch
-                        </a>
+                        </Link>
                     </div>
                 </div>
             ))}

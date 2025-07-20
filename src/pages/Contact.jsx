@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
+import { Link } from 'react-router-dom';
 
 const ContactPage = () => {
   useEffect(() => {
@@ -8,11 +9,11 @@ const ContactPage = () => {
   }, []);
 
   return (
-    <section id="contact" className="bg-black text-white py-20 md:px-6 p-3">
+    <section id="contact" className="bg-white text-white py-20 md:px-6 p-3">
       <div className="container mx-auto text-center">
         {/* Section Title */}
-        <h2 data-aos="fade-up" className="text-4xl text-center md:text-5xl font-extrabold leading-tight mb-10 text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-red-600"> Get In Touch</h2>
-        <p data-aos="fade-up" className="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto"> Feel free to reach out if you have any questions, ideas, or projects in mind. Let’s create something amazing together!</p>
+        <h2 data-aos="fade-up" className="text-4xl text-center md:text-5xl font-extrabold leading-tight mb-10 text-black"> Get In Touch</h2>
+        <p data-aos="fade-up" className="text-lg md:text-xl text-gray-700 mb-10 max-w-2xl mx-auto"> Feel free to reach out if you have any questions, ideas, or projects in mind. Let’s create something amazing together!</p>
 
         {/* Contact Form & Map */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
@@ -46,7 +47,7 @@ const ContactPage = () => {
 
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-purple-600 to-red-600 text-white py-3 rounded-lg text-lg font-semibold transition duration-300 ease-in-out hover:bg-indigo-700 transform hover:scale-105"
+                className="w-full bg-black text-white py-3 rounded-lg text-lg font-semibold transition duration-300 ease-in-out hover:bg-indigo-700 transform hover:scale-105"
               >
                 Send Message
               </button>
@@ -63,26 +64,26 @@ const ContactPage = () => {
             {/* Social Media Icons (placed below the map) */}
             <div className="mt-8">
               <div className="relative">
-                <h3 className="text-4xl text-center font-semibold mb-2 text-transparent bg-clip-text bg-gray-300"> Follow Me
+                <h3 className="text-4xl text-center font-bold mb-2 text-transparent bg-clip-text bg-black"> Follow Me
                 </h3>
                 <div className="absolute left-[50%] right-[50%] -translate-x-[45%] w-20 h-2 rounded-xl bg-gradient-to-r from-purple-600 to-red-600 hover:text-purple-600 transition duration-300 "></div>
               </div>
               <div className="flex justify-center space-x-6 mt-7">
-                <a href="https://wa.me/1234567890" className="text-5xl text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-red-600 hover:text-purple-600 transition duration-300" aria-label="WhatsApp"
+                <Link to="https://wa.me/1234567890" className="text-5xl text-black transition duration-300" aria-label="WhatsApp"
                 > <i className="fab fa-whatsapp"></i>
-                </a>
-                <a href="https://facebook.com/yourprofile" className="translate-y-6 text-5xl text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-red-600 hover:text-purple-600 transition duration-300" aria-label="Facebook"
+                </Link>
+                <Link to="https://facebook.com/yourprofile" className="translate-y-6 text-5xl text-black transition duration-300" aria-label="Facebook"
                 > <i className="fab fa-facebook"></i>
-                </a>
-                <a href="https://instagram.com/yourprofile" className="translate-y-6 text-5xl text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-red-600 hover:text-purple-600 transition duration-300" aria-label="Instagram"
+                </Link>
+                <Link to="https://instagram.com/yourprofile" className="translate-y-6 text-5xl text-black transition duration-300" aria-label="Instagram"
                 > <i className="fab fa-instagram"></i>
-                </a>
-                <a href="https://twitter.com/yourprofile" className="translate-y-6 text-5xl text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-red-600 hover:text-purple-600 transition duration-300" aria-label="Twitter"
+                </Link>
+                <Link to="https://twitter.com/yourprofile" className="translate-y-6 text-5xl text-black transition duration-300" aria-label="Twitter"
                 > <i className="fab fa-twitter"></i>
-                </a>
-                <a href="https://tiktok.com/@yourprofile" className="text-5xl text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-red-600 hover:text-purple-600 transition duration-300" aria-label="TikTok"
+                </Link>
+                <Link to="https://tiktok.com/@yourprofile" className="text-5xl text-black transition duration-300" aria-label="TikTok"
                 > <i className="fab fa-tiktok"></i>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
