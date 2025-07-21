@@ -19,7 +19,7 @@ export default function Header() {
 
   return (
     <header className="shadow-sm sticky top-0 z-50 bg-white text-gray-900 ">
-      <nav aria-label="Global" className="flex items-center justify-between px-3 py-4 max-w-screen-xl mx-auto">
+      <nav aria-label="Global" className="flex items-center justify-between px-6 py-4 max-w-screen-xl mx-auto">
         {/* Logo */}
         <div className="flex items-center space-x-2">
           <Link to="/" className="text-2xl font-bold text-black hover:text-black transition">
