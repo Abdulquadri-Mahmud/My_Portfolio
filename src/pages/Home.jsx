@@ -8,7 +8,7 @@ import PortfolioComponent from '../components/PortfolioComponent'
 
 export default function Home() {
   return (
-    <div className='bg-white'>
+    <div className='bg-black md:p-5 p-2'>
       <Hero/>
       <AboutComponent/>
       <SkillsAndJourney/>

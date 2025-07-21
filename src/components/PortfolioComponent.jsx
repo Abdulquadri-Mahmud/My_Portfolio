@@ -137,7 +137,7 @@ const PortfolioComponent = () => {
   };
 
   return (
-    <section className="bg-white text-black my-12 md:px-24 md:p-6 p-4 rounded-lg" id="portfolio">
+    <section className="bg-white text-black my-12 md:p-6 p-4 rounded-xl overflow-hidden" id="portfolio">
       <div className="container mx-auto max-w-7xl text-center lg:text-left">
         <h2
           data-aos="fade-up"

@@ -10,7 +10,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="rounded-2xl relative z-10 bg-white text-gray-900 md:min-h-screen md:px-24 md:py-0 py-20 flex items-center justify-center px-4">
+    <section className="rounded-2xl overflow-hidden relative z-10 bg-white text-gray-900 md:min-h-screen md:px-24 py-20 flex items-center justify-center px-4">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
         {/* Text Content */}
         <div className="text-left max-w-2xl" data-aos="fade-right">

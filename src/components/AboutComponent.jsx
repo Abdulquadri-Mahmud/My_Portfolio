@@ -9,7 +9,7 @@ const AboutComponent = () => {
   }, []);
 
   return (
-    <section className="bg-white py-12 py-5 md:px-6 px-4" id="about">
+    <section className="bg-white my-10 rounded-xl overflow-hidden md:py-12 py-5 md:px-6 px-4" id="about">
 
       <div className="container mx-auto max-w-7xl text-black">
         {/* Section Title */}
