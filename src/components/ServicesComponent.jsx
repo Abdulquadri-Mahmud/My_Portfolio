@@ -108,13 +108,13 @@ const ServicesComponent = () => {
           <Slider {...settings}>
             {services.map((service, index) => (
                 <div className="p-2" key={index}>
-                    <div className="relative bg-gray-900 rounded-lg shadow-lg py-6 px-4 transition-transform transform group">
+                    <div className="relative bg-black rounded-lg shadow-lg py-6 px-4 transition-transform transform group">
                         <div className="flex justify-center mb-4">
                             <i className={`${service.icon} text-4xl text-purple-600`} />  {/* Icon with Tailwind classes */}
                         </div>
                         <h3 className="text-2xl font-semibold text-gray-100 mb-4">{service.title}</h3>
                         <p className="text-white mb-6">{service.description}</p>
-                        <Link to="/contact" className="inline-block border-b border-r border-white text-white py-3 px-8 text-lg font-semibold transition duration-300 ease-in-out hover:bg-indigo-700 transform hover:scale-110">
+                        <Link to="/contact" className="inline-block border-b border-r border-white text-white py-3 px-8 text-lg font-semibold transition duration-300 ease-in-out hover:bg-purple-600 transform hover:scale-110">
                             Get in Touch
                         </Link>
                     </div>

@@ -166,7 +166,7 @@ const Portfolio = () => {
                 </div>
 
                 <div className="p-5 flex flex-col flex-grow">
-                  <h3 className="text-2xl font-semibold mb-3 text-gray-900 text-left">
+                  <h3 className="text-2xl font-semibold mb-3 text-black text-left">
                     {project.title}
                   </h3>
 
@@ -179,7 +179,7 @@ const Portfolio = () => {
                       href={project.demoLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="px-4 py-2 rounded-md bg-gray-800 text-white hover:bg-gray-900 transition duration-300"
+                      className="px-4 py-2 rounded-md bg-black text-white hover:bg-black transition duration-300"
                     >
                       View Demo
                     </a>
@@ -187,7 +187,7 @@ const Portfolio = () => {
                       href={project.repoLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="px-4 py-2 rounded-md bg-gray-800 text-white hover:bg-gray-900 transition duration-300"
+                      className="px-4 py-2 rounded-md bg-black text-white hover:bg-black transition duration-300"
                     >
                       GitHub Repo
                     </a>
@@ -207,7 +207,7 @@ const Portfolio = () => {
                   className={`px-2 py-2 rounded-lg ${
                     currentPage === 1
                       ? 'bg-gray-300 text-gray-600 cursor-not-allowed'
-                      : 'bg-gray-800 text-white hover:bg-gray-900 transition duration-300'
+                      : 'bg-black text-white hover:bg-black transition duration-300'
                   }`}
                 >
                   Previous
@@ -225,8 +225,8 @@ const Portfolio = () => {
                       onClick={() => paginate(number)}
                       className={`px-3 py-1 rounded-md ${
                         currentPage === number
-                          ? 'bg-gray-800 text-white'
-                          : 'bg-gray-300 text-gray-800 hover:bg-gray-400 transition duration-300'
+                          ? 'bg-black text-white'
+                          : 'bg-gray-300 text-black hover:bg-gray-400 transition duration-300'
                       }`}
                     >
                       {number}
@@ -242,7 +242,7 @@ const Portfolio = () => {
                   className={`px-2 py-2 rounded-lg ${
                     currentPage === totalPages
                       ? 'bg-gray-300 text-gray-600 cursor-not-allowed'
-                      : 'bg-gray-800 text-white hover:bg-gray-900 transition duration-300'
+                      : 'bg-black text-white hover:bg-black transition duration-300'
                   }`}
                 >
                   Next

@@ -42,6 +42,13 @@ const SkillsAndJourney = () => {
       description:
         "Expanded expertise to integrate frontend and backend technologies for seamless web solutions.",
     },
+    {
+      year: "2025",
+      title: "MERN Stack Developer at SamkaTech",
+      description:
+        "Building and maintaining full-stack applications using MongoDB, Express.js, React.js, and Node.js. Contributed to scalable, high-performance digital solutions tailored for clients.",
+    }
+
   ];
 
   return (
@@ -87,7 +94,7 @@ const SkillsAndJourney = () => {
             className="flex items-start space-x-6"
           >
             <div
-              className="flex-shrink-0 w-16 h-16 rounded-full flex items-center justify-center font-bold text-white bg-gray-900"
+              className="flex-shrink-0 w-16 h-16 rounded-full flex items-center justify-center font-bold text-white bg-black"
             >
               {year}
             </div>
