@@ -45,7 +45,7 @@ const SkillsAndJourney = () => {
   ];
 
   return (
-    <div className="flex flex-col md:flex-row justify-between gap-12 py-12 md:px-24 rounded-xl overflow-hidden bg-white p-5">
+    <div className="flex flex-col md:flex-row justify-between gap-12 py-12 md:px-24 rounded-lg overflow-hidden bg-white p-5">
       {/* Skills Section */}
       <div data-aos="fade-up" className="md:w-1/2 space-y-8">
         <h3 className="text-3xl font-bold mb-6 text-black">Skills</h3>

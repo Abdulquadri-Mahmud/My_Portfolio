@@ -10,12 +10,14 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="rounded-2xl overflow-hidden relative z-10 bg-white text-gray-900 md:min-h-screen md:px-24 py-20 flex items-center justify-center px-4">
+    <section className="rounded-lg overflow-hidden relative z-10 bg-white text-gray-900 md:min-h-screen md:px-24 py-10 flex items-center justify-center px-4">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
         {/* Text Content */}
         <div className="text-left max-w-2xl" data-aos="fade-right">
           <div data-aos="fade-up" data-aos-delay="100">
-            <h1 className='md:text-5xl text-4xl font-bold text-black'>HI <span aria-label="waving hand" role="img">👋</span>! I'm  AdeyemiCODE, <br /> Frontend Website Developer</h1>
+            <h1 className='md:text-5xl text-3xl font-bold text-black'>HI <span aria-label="waving hand" role="img">👋</span>! I'm  Adeyemi, <br /> 
+              <TypeWriter/>
+            </h1>
             
             {/* <TypeWriter /> */}
           </div>

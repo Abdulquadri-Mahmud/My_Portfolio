@@ -138,7 +138,7 @@ const Portfolio = () => {
   };
 
   return (
-    <div className='bg-black md:p-5 p-2'>
+    <div className='bg-black md:p-5 p-2 overflow-hidden'>
       <PortfolioHero/>
       <section className="bg-white text-black md:p-6 p-4 rounded-lg" id="portfolio">
         <div className="container mx-auto max-w-7xl text-center lg:text-left">

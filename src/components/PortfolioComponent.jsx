@@ -137,13 +137,9 @@ const PortfolioComponent = () => {
   };
 
   return (
-    <section className="bg-white text-black my-12 md:p-6 p-4 rounded-xl overflow-hidden" id="portfolio">
+    <section className="bg-white text-black my-5 md:p-6 p-4 rounded-lg overflow-hidden" id="portfolio">
       <div className="container mx-auto max-w-7xl text-center lg:text-left">
-        <h2
-          data-aos="fade-up"
-          className="text-4xl md:text-5xl font-extrabold mb-16"
-          style={{ color: '#111' }}
-        >
+        <h2 data-aos="fade-up" className="text-4xl md:text-5xl font-extrabold mb-16" style={{ color: '#111' }}>
           My Portfolio
         </h2>
 

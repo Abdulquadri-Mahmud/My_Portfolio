@@ -32,7 +32,7 @@ const ContactComponent = () => {
   return (
     <section
       id="contact"
-      className="my-10 overflow-hidden bg-white text-black py-12 md:px-6 px-3 rounded-lg shadow-lg md:max-w-4xl mx-auto"
+      className="my-5 overflow-hidden bg-white text-black py-12 md:px-6 px-3 rounded-lg shadow-lg md:max-w-4xl mx-auto"
     >
       <div className="text-center">
         {/* Section Title */}

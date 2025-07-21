@@ -51,7 +51,7 @@ const Services = () => {
   ];
 
   return (
-    <div className='bg-black md:p-5 p-2'>
+    <div className='bg-black md:p-5 p-2 overflow-hidden'>
       <ServicesHero/>
       <section className="bg-white mt-8 rounded-lg text-white py-20 px-6" id="services">
         <div className="container mx-auto text-center lg:text-left">

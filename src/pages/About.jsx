@@ -13,7 +13,7 @@ const About = () => {
   const progressBarColor = 'bg-purple-600';
 
   return (
-    <div className='bg-black md:p-5 p-2'>
+    <div className='bg-black md:p-5 p-2 overflow-hidden'>
       <AboutHero />
       <section className="bg-white py-5 md:px-6 px-4 rounded-lg" id="about">
         <div className="container mx-auto max-w-7xl text-black">

@@ -9,7 +9,7 @@ const ContactPage = () => {
   }, []);
 
   return (
-    <section id="contact" className="bg-white text-white py-20 md:px-6 p-3">
+    <section id="contact" className="bg-white overflow-hidden text-white py-20 md:px-6 p-3">
       <div className="container mx-auto text-center">
         {/* Section Title */}
         <h2 data-aos="fade-up" className="text-4xl text-center md:text-5xl font-extrabold leading-tight mb-10 text-black"> Get In Touch</h2>

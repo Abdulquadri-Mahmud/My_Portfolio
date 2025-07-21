@@ -91,7 +91,7 @@ const ServicesComponent = () => {
   };
 
   return (
-    <section className="bg-white text-black mt-12 md:p-5 py-5 rounded-xl overflow-hidden" id="services">
+    <section className="bg-white text-black mt-5 md:p-5 py-5 rounded-lg overflow-hidden" id="services">
       <div className="container mx-auto text-center lg:text-left">
         {/* Section Title */}
         <h2 data-aos="fade-up" className="text-3xl md:text-5xl text-center font-extrabold leading-tight mb-4  text-black">

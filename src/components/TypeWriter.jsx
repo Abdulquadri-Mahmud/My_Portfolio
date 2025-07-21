@@ -20,17 +20,17 @@ export default function TypeWriter() {
     return (
     <div className='App'>
         <h1 data-aos="fade-right" className='text-3xl sm:text-4xl md:text-5xl font-serif font-extrabold leading-tight mb-4'>
-            Hello,{' '}
+            {/* Hello,{' '} */}
         <span>
             {/* Style will be inherited from the parent element */}
             <Typewriter
-            words={['I\'m  AdeyemiCODE', 'I\'m a Frontend Website Developer', 'Also a MERN Stack Developer']}
+            words={['Full-Stack Website Developer', 'Mern-Stack Website Developer']}
             loop={'infinite'}
             cursor
             cursorStyle='|'
             typeSpeed={100}
             deleteSpeed={50}
-            delaySpeed={1500}
+            delaySpeed={2500}
             onLoopDone={handleDone}
             // onType={handleType}
             />
