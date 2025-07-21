@@ -32,14 +32,14 @@ const ContactComponent = () => {
   return (
     <section
       id="contact"
-      className="my-20 bg-white text-black py-12 md:px-6 px-3 rounded-lg shadow-lg md:max-w-4xl mx-auto"
+      className="mt-10 bg-gray-800 text-black py-12 md:px-6 px-3 rounded-lg text-white shadow-lg md:max-w-4xl mx-auto"
     >
       <div className="text-center">
         {/* Section Title */}
         <h2 className="text-3xl md:text-4xl font-extrabold mb-6">
           Get in Touch
         </h2>
-        <p className="text-sm md:text-xl mb-8 text-black">
+        <p className="text-sm md:text-xl mb-8">
           Have a question or want to work together? Let’s create something
           amazing!
         </p>
@@ -51,7 +51,7 @@ const ContactComponent = () => {
               type="text"
               name="name"
               placeholder="Your Name"
-              className="w-full px-4 py-3 rounded-md bg-slate-200 text-black focus:outline-none focus:ring-2 focus:ring-purple-300"
+              className="w-full px-4 py-3 rounded-md bg-gray-50 text-black focus:outline-none focus:ring-2 focus:ring-purple-300"
               value={formData.name}
               onChange={handleChange}
               required
@@ -62,7 +62,7 @@ const ContactComponent = () => {
               type="email"
               name="email"
               placeholder="Your Email"
-              className="w-full px-4 py-3 rounded-md bg-slate-200 text-black focus:outline-none focus:ring-2 focus:ring-purple-300"
+              className="w-full px-4 py-3 rounded-md bg-gray-50 text-black focus:outline-none focus:ring-2 focus:ring-purple-300"
               value={formData.email}
               onChange={handleChange}
               required
@@ -73,7 +73,7 @@ const ContactComponent = () => {
               name="message"
               rows="4"
               placeholder="Your Message"
-              className="w-full px-4 py-3 rounded-md bg-slate-200 text-black focus:outline-none focus:ring-2 focus:ring-purple-300"
+              className="w-full px-4 py-3 rounded-md bg-gray-50 text-black focus:outline-none focus:ring-2 focus:ring-purple-300"
               value={formData.message}
               onChange={handleChange}
               required
@@ -82,7 +82,7 @@ const ContactComponent = () => {
           <div>
             <button
               type="submit"
-              className="w-full border-b border-r border-black py-3 rounded-md text-lg font-semibold hover:bg-black hover:text-white transition duration-300"
+              className=" bg-white w-[200px] py-3 rounded-md text-lg font-semibold hover:bg-black hover:text-white transition duration-300"
             >
               Send Message
             </button>

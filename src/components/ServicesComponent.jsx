@@ -13,11 +13,11 @@ const ServicesComponent = () => {
 
   const services = [
     {
-      title: 'Frontend Development',
+      title: 'MERN Stack Development',
       description:
-        'Creating responsive, dynamic, and interactive websites using HTML, CSS, JavaScript, ReactJS, and TailwindCSS.',
-      icon: 'fas fa-laptop-code',  // Font Awesome icon for frontend
-    },
+        'Building full-stack web applications using MongoDB, Express.js, React.js, and Node.js. Delivering scalable, responsive, and efficient solutions tailored to your business needs.',
+      icon: 'fas fa-code-branch',  // Font Awesome icon representing full-stack/backend work
+},
     {
       title: 'SEO Optimization',
       description:

@@ -137,7 +137,7 @@ const PortfolioComponent = () => {
   };
 
   return (
-    <section className="bg-white text-black my-12 md:p-6 p-4 rounded-lg" id="portfolio">
+    <section className="bg-white text-black my-12 md:px-24 md:p-6 p-4 rounded-lg" id="portfolio">
       <div className="container mx-auto max-w-7xl text-center lg:text-left">
         <h2
           data-aos="fade-up"
@@ -147,7 +147,7 @@ const PortfolioComponent = () => {
           My Portfolio
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {currentProjects.map((project, index) => (
             <div
               key={index}
