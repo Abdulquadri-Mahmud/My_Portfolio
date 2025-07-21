@@ -13,7 +13,7 @@ const SkillsAndJourney = () => {
     { name: "JavaScript", level: 65 },
     { name: "TailwindCSS", level: 80 },
     { name: "ReactJS", level: 75 },
-    { name: "NodeJS", level: 50 },
+    { name: "NodeJS", level: 55 },
     { name: "MongoDB", level: 60 },
   ];
 
