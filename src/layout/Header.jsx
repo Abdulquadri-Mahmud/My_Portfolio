@@ -18,7 +18,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="shadow-sm sticky top-0 z-50 bg-white text-gray-900 ">
+    <header className="shadow-sm sticky top-0 z-50 bg-white text-gray-900 overflow-hidden">
       <nav aria-label="Global" className="flex items-center justify-between px-6 py-4 max-w-screen-xl mx-auto">
         {/* Logo */}
         <div className="flex items-center space-x-2">
