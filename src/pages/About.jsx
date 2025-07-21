@@ -31,7 +31,7 @@ const About = () => {
             <div data-aos="fade-right" className="md:w-1/3 w-full flex justify-center">
               <img
                 src="/img/img.jpg"
-                alt="AdeyemiCODE"
+                alt="Abdul-Quadri Mahmud Adeyemi"
                 className="rounded-lg shadow-lg border-4 max-h-96 object-cover"
                 style={{ minWidth: '300px' }}
               />

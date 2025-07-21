@@ -44,7 +44,7 @@ const Hero = () => {
           <div className="absolute max-w-xl h-2xl md:w-[100%] md:h-96 bg-zinc-100 rounded-xl top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
 
           {/* Actual Image */}
-          <img src="/img/img.jpg" alt="Developer working" className="w-full h-auto max-w-md border-2 border-black mx-auto rounded-tr-[30%] rounded-xl shadow-lg relative z-10"/>
+          <img src="/img/img.jpg" alt="Abdul-Quadri Mahmud Adeyemi" className="w-full h-auto max-w-md border-2 border-black mx-auto rounded-tr-[30%] rounded-xl shadow-lg relative z-10"/>
         </div>
 
       </div>

@@ -21,7 +21,7 @@ const AboutComponent = () => {
         <div className="flex flex-col md:flex-row items-center gap-8">
           {/* Image */}
           <div data-aos="fade-right" className="md:w-1/3 w-full flex justify-center">
-            <img src="/img/img2.jpg" alt="AdeyemiCODE" className="shadow-lg border-2 border-black md:max-h-96 rounded-tl-[30%] rounded-xl object-cover" style={{ minWidth: "300px" }}/>
+            <img src="/img/img2.jpg" alt="Abdul-Quadri Mahmud Adeyemi" className="shadow-lg border-2 border-black md:max-h-96 rounded-tl-[30%] rounded-xl object-cover" style={{ minWidth: "300px" }}/>
           </div>
 
           {/* Text Content */}
