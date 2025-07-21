@@ -21,7 +21,7 @@ const Portfolio = () => {
       title: 'ADEXIFY (E-Commerce)',
       description:
         'Adexify is a personal e-commerce project designed to empower upcoming online vendors. It provides an intuitive platform to help vendors grow their businesses faster and more efficiently. With Adexify, managing and showcasing products becomes seamless, enabling vendors to reach more customers and scale their operations effortlessly.',
-      image: '/p.png',
+      image: '/port.png',
       demoLink: 'https://adexify-five.vercel.app/',
       repoLink: 'https://github.com/Abdulquadri-Mahmud/Adexify.git',
     },

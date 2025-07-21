@@ -31,12 +31,7 @@ export default function Header() {
         <div className="hidden lg:flex lg:gap-x-10">
           {navigation.map((item) =>
             item.download ? (
-              <a
-                key={item.name}
-                href={item.path}
-                download
-                className="text-black hover:underline"
-              >
+              <a key={item.name} href={item.path} download className="text-black hover:underline">
                 {item.name}
               </a>
             ) : (

@@ -12,7 +12,7 @@ const Sidebar = () => {
     { name: 'Portfolio', path: '/portfolio' },
     { name: 'Services', path: '/services' },
     { name: 'Contact', path: '/contact' },
-    { name: 'Resume', path: '/resume' },
+    { name: 'Resume', path: '/img/Myresume.pdf', download: true }
   ];
 
   return (
@@ -43,17 +43,18 @@ const Sidebar = () => {
         </div>
 
         {/* Navigation Links */}
-        <nav className="mt-6 space-y-2 px-4">
-          {navigation.map((item) => (
-            <Link
-              key={item.name}
-              to={item.path}
-              onClick={() => setSidebarOpen(false)}
-              className="block px-4 py-2 text-base font-medium rounded-md hover:bg-gray-100 transition"
-            >
-              {item.name}
-            </Link>
-          ))}
+        <nav className="mt-6 space-y-4 font-semibold flex flex-col px-4">
+          {navigation.map((item) =>
+            item.download ? (
+              <a key={item.name} href={item.path} download className="text-black bg-slate-200 px-3 py-2 rounded hover:underline">
+                {item.name}
+              </a>
+            ) : (
+              <Link key={item.name} to={item.path} className="text-black hover:underline bg-slate-200 px-3 py-2 rounded">
+                {item.name}
+              </Link>
+            )
+          )}
         </nav>
       </div>
 
