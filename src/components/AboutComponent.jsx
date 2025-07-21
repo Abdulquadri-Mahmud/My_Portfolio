@@ -43,7 +43,7 @@ const AboutComponent = () => {
 
             <p>
               I have contributed as a Frontend Developer at{" "}
-              <strong>Sysbeans</strong> and <strong>Fyndah</strong>, gaining
+              <strong>Sysbeams</strong> and <strong>Fyndah</strong>, gaining
               hands-on experience delivering scalable web solutions.
               Additionally, I serve as a Front-end Instructor at Al-Ameen ITHUB,
               delivering engaging lectures and workshops in HTML, CSS, and
